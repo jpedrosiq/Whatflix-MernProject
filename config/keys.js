@@ -1,4 +1,5 @@
 module.exports = {
-  mongoURI: 'mongodb://<DBUser>:<password>@cluster.mongodb.net/test?retryWrites=true&w=majority'
-  //Make sure this is your own unique string
-}
+  mongoURI:
+    "mongodb+srv://dev:XPPhQurcRgDKX20h@cluster0-pb1wa.mongodb.net/WhatFlix?retryWrites=true&w=majority",
+  secretOrKey: "WhatFlixKey"
+};
