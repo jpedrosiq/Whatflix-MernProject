@@ -28,9 +28,9 @@ class NavBar extends React.Component {
             );
         } else {
             return (
-                <div>
-                    <Link to={'/signup'}>Signup</Link>
-                    <Link to={'/login'}>Login</Link>
+                <div className="btn-nav-bar">
+                    <Link className="btn-nav" to={'/signup'} style={{ textDecoration:"none" }}>SIGN UP</Link>
+                    <Link className="btn-nav" to={'/login'} style={{ textDecoration: "none" }}>LOGIN</Link>
                 </div>
             );
         }
@@ -38,8 +38,8 @@ class NavBar extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>Welcome to WhatFlix! Wha-What?!</h1>
+            <div className="nav-bar">
+                <img src="https://i.imgur.com/HLCwM97.png" />
                 {this.getLinks()}
             </div>
         );
