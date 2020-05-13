@@ -1,0 +1,35 @@
+.showcase {
+    background-image: url(https://i.imgur.com/Jdr1nCh.jpg);
+     background-size: 100%;
+     height: 700px;
+     position: relative;
+     background-color: black;
+     margin: 0px;
+     box-shadow: inset 60px 50px 60px black, inset -60px -50px 60px black;
+}
+
+.main-header-title {
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+     margin: auto;
+     margin-top: 300px;
+     display: flex;
+     color: rgb(83, 141, 158);
+}
+
+.showcase-box {
+    margin-left: 180px;
+    margin-top: 160px;
+    position: absolute;
+}
+
+.main-page {
+    background-color: black;
+}
+
+body {
+    margin: 0px;
+    background-color: black;
+
+}
