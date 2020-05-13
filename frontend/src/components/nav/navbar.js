@@ -1,8 +1,9 @@
 // src/components/nav/navbar.js
 
 import React from 'react';
-import { Link } from 'react-router-dom'
-import './navbar.css'
+import { Link } from 'react-router-dom';
+import './navbar.css';
+import LoginFormContainer from "../session/login_form_container";
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -29,8 +30,8 @@ class NavBar extends React.Component {
         } else {
             return (
                 <div className="btn-nav-bar">
-                    <Link className="btn-nav" to={'/signup'} style={{ textDecoration:"none" }}>SIGN UP</Link>
-                    <Link className="btn-nav" to={'/login'} style={{ textDecoration: "none" }}>LOGIN</Link>
+                    <Link className="btn-nav-signup" to={'/signup'} style={{ textDecoration:"none" }}>SIGN UP</Link>
+                    <LoginFormContainer />
                 </div>
             );
         }
@@ -39,7 +40,9 @@ class NavBar extends React.Component {
     render() {
         return (
             <div className="nav-bar">
-                <img src="https://i.imgur.com/HLCwM97.png" />
+                <Link to="/">
+                    <img src="https://i.imgur.com/HLCwM97.png" />
+                </Link>
                 {this.getLinks()}
             </div>
         );

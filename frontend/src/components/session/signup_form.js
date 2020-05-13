@@ -1,5 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import "./signup_form.css";
 
 class SignupForm extends React.Component {
     constructor(props) {
@@ -52,26 +54,36 @@ class SignupForm extends React.Component {
 
     render() {
         return (
-            <div className="signup-form-container">
-                <form onSubmit={this.handleSubmit}>
-                    <div className="signup-form">
-                        <br />
-                        <input type="text"
-                            value={this.state.email}
-                            onChange={this.update('email')}
-                            placeholder="Email"
-                        />
-                        <br />
-                        <input type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            placeholder="Password"
-                        />
-                        <br />
-                        <input type="submit" value="Submit" />
-                        {this.renderErrors()}
-                    </div>
-                </form>
+            <div>
+                <div className="nav-bar">
+                    <Link to="/">
+                        <img src="https://i.imgur.com/HLCwM97.png" />
+                    </Link>
+                    <Link className="btn-nav-login" to={'/login'} style={{ textDecoration: "none" }}>LOGIN</Link>
+                </div>
+                <div className="signup-form-container" >
+                    <form onSubmit={this.handleSubmit} className="signup-form-box">
+                        <div className="signup-form">
+                            <br />
+                            <input type="text"
+                                value={this.state.email}
+                                onChange={this.update('email')}
+                                placeholder="Email"
+                                className="signup-input"
+                            />
+                            <br />
+                            <input type="password"
+                                value={this.state.password}
+                                onChange={this.update('password')}
+                                placeholder="Password"
+                                className="signup-input"
+                            />
+                            <br />
+                            <input type="submit" value="Submit" className="btn-nav-submit"/>
+                            {this.renderErrors()}
+                        </div>
+                    </form>
+                </div>
             </div>
         );
     }

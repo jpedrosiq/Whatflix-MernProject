@@ -2,17 +2,32 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 70px;
+    height: 79px;
     background-color: rgb(104, 161, 172);
 }
 
 .btn-nav-bar {
-    height: 20px;
+    height: 30px;
     display: flex;
     justify-content: flex-end;
 }
 
-.btn-nav {
+/* .btn-nav-login {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 5px;
+    background-color: black;
+    color: rgb(104, 161, 172);
+    border-radius: 3px;
+    align-items: center;
+} */
+
+.btn-nav-signup {
     width: 100px;
     display: flex;
     justify-content: center;
