@@ -3,7 +3,6 @@ import {Typhography, Row, Button, Divider} from 'antd';
 import { API_URL, API_KEY, IMAGE_BASE_URL, IMAGE_SIZE, POSTER_SIZE } from '../../Config';
 import MainImage from './sections/main_image';
 import GridCard from './sections/gridCard';
-import BrowseNavBar from "../../nav/browse_navbar"
 
 // const { Title } = Typhography;
 
@@ -53,7 +52,6 @@ function LandingPage(props) {
         const docHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
         const windowBottom = windowHeight + window.pageYOffset;
         if (windowBottom >= docHeight - 1) {
-
             // loadMoreItems()
             console.log('clicked')
             buttonRef.current.click();
