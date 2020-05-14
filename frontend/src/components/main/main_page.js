@@ -12,7 +12,7 @@ class MainPage extends React.Component {
                     <div className="main-page">
                         <div className="showcase">
                             <div className="showcase-box">
-                                <img src="https://i.imgur.com/HLCwM97.png"/>
+                                <img src="https://i.imgur.com/HLCwM97.png" alt="logo"/>
                             
                                 <div className="main-header-title">
                                     The platform that will help you pick the right movie to watch!

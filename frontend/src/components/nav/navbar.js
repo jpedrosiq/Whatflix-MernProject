@@ -41,7 +41,7 @@ class NavBar extends React.Component {
         return (
             <div className="nav-bar">
                 <Link to="/">
-                    <img src="https://i.imgur.com/HLCwM97.png" />
+                    <img src="https://i.imgur.com/HLCwM97.png" alt="logo"/>
                 </Link>
                 {this.getLinks()}
             </div>

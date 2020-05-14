@@ -57,7 +57,7 @@ class SignupForm extends React.Component {
             <div>
                 <div className="nav-bar">
                     <Link to="/">
-                        <img src="https://i.imgur.com/HLCwM97.png" />
+                        <img src="https://i.imgur.com/HLCwM97.png" alt="logo"/>
                     </Link>
                     <Link className="btn-nav-login" to={'/login'} style={{ textDecoration: "none" }}>LOGIN</Link>
                 </div>
