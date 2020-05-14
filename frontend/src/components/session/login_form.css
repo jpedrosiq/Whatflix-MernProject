@@ -1,0 +1,45 @@
+
+.dropdown-login-btn {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border: none;
+    margin: 10px 10px 0px; 
+    margin-right: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    background-color: black;
+    color: rgb(104, 161, 172);
+    border-radius: 3px;
+    align-items: center;
+}
+
+.dropdown-login {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-login-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-login-content .login-form-box {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-login-content a:hover {background-color: #ddd;}
+
+.dropdown-login:hover .dropdown-login-content {display: block;}
+
+.dropdown-login:hover .dropdown-login-btn {background-color: #3e8e41;}
