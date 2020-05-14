@@ -1,17 +1,29 @@
-.NavBar {
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 70px;
+    background-color: rgb(104, 161, 172);
 }
 
-.NavBar button {
+.btn-nav-bar {
     height: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.Links1 {
+.btn-nav {
     width: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    height: 30px;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    background-color: black;
+    color: rgb(104, 161, 172);
+    border-radius: 3px;
+    align-items: center;
 }
 
 .Links2 {
