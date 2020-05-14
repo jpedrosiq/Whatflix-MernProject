@@ -4,6 +4,7 @@
      height: 700px;
      position: relative;
      background-color: black;
+     display: flex;
      margin: 0px;
      box-shadow: inset 60px 50px 60px black, inset -60px -50px 60px black;
 }
@@ -12,16 +13,16 @@
     font-size: 45px;
     font-weight: bold;
     position: absolute;
-     margin: auto;
-     margin-top: 300px;
-     display: flex;
-     color: rgb(83, 141, 158);
+    display: flex;
+    width: 700px;
+    color: rgb(83, 141, 158);
 }
 
 .showcase-box {
-    margin-left: 180px;
-    margin-top: 160px;
+    margin-left: 150px;
+    margin-top: 130px;
     position: absolute;
+    display: flex;
 }
 
 .main-page {
