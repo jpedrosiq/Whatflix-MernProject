@@ -6,7 +6,7 @@ const favoriteSchema = mongoose.Schema(
   {
     userFrom: {
       type: Schema.Types.ObjectId,
-      ref: "User",
+      ref: 'User',
     },
     movieId: {
       type: String,
