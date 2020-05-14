@@ -17,7 +17,7 @@ class MainPage extends React.Component {
                                     The platform that will help you pick the right movie to watch!
                                 </div>
                                 <Link to="/browse" className="main-start-btn">
-                                    FIND YOUR MOVIE!  &nbsp; <i class="fa fa-angle-right" style={{fontSize:"50px"}}> </i>
+                                    FIND YOUR MOVIE!  &nbsp; <i className="fa fa-angle-right" style={{fontSize:"50px"}}> </i>
                                 </Link>
                             </div>
                         </div>
