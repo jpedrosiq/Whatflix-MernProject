@@ -59,7 +59,6 @@ class SignupForm extends React.Component {
                     <Link to="/">
                         <img src="https://i.imgur.com/HLCwM97.png" alt="logo"/>
                     </Link>
-                    <Link className="btn-nav-login" to={'/login'} style={{ textDecoration: "none" }}>LOGIN</Link>
                 </div>
                 <div className="signup-form-container" >
                     <form onSubmit={this.handleSubmit} className="signup-form-box">
