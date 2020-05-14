@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/jpedrosiq/mern-project#readme",
   "dependencies": {
+    "antd": "^4.2.2",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "concurrently": "^5.2.0",

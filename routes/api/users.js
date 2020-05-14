@@ -50,19 +50,18 @@ router.post('/register', (req, res) => {
               .then(user => {
         
                 jwt.sign(
-                  { id: user.id},
+                  { id: user.id, email: user.email},
                   keys.secretOrKey,
                   { expiresIn: 3600 },
                   (err, token) => {
                     if (err) throw err;
                     res.json({
-                      token,
+                      success: true,
+                      token: 'Bearer ' + token,
                       user: {
                         id: user.id,
                         email: user.email
-                      },
-                      success: true,
-                      token: 'Bearer ' + token
+                      }
                     });
                   });
               })
