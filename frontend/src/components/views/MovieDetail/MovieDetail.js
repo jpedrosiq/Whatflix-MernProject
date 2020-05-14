@@ -4,8 +4,8 @@ import axios from 'axios';
 // import Comments from './Sections/Comments'
 // import LikeDislikes from './Sections/LikeDislikes';
 import { API_URL, API_KEY, IMAGE_BASE_URL, IMAGE_SIZE } from '../../Config'
-import GridCards from '../../commons/GridCards';
-import MainImage from '../../views/LandingPage/Sections/MainImage';
+import GridCards from "../landing_page/sections/gridCard"
+import MainImage from '../landing_page/sections/main_image';
 import MovieInfo from './Sections/MovieInfo';
 import Favorite from './Sections/Favorite.js';
 

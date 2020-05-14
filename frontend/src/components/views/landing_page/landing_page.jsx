@@ -1,10 +1,10 @@
 import React, {useEffect, useState, useRef} from 'react';
 import {Typhography, Row, Button, Divider} from 'antd';
-import {API_URL, API_KEY, IMAGE_URL } from '../../config';
+import {API_URL, API_KEY, IMAGE_BASE_URL } from '../../Config';
 import MainImage from './sections/main_image';
 import GridCard from './sections/gridCard';
 
-const {Title} = Typhography;
+// const { Title } = Typhography;
 
 function LandingPage(props) {
 
@@ -19,8 +19,8 @@ function LandingPage(props) {
         fetch(path)
             .then(response => response.json())
             .then(response => {
-                SetMovies(response.results)
-                SetCurrentPage(response).page
+                SetMovies([...Movies, ...response.results])
+                SetCurrentPage(response.page)
             })
     }
 
@@ -34,25 +34,26 @@ function LandingPage(props) {
 
             {Movies[0] &&
             <MainImage 
-            image={`${IMAGE_URL}/w1280${Movies[0].backdrop_path}`} 
-            title={Movies[0].original_title}
-             text={Movies[0].overview}/>
+                image={`${IMAGE_BASE_URL}/w1280${Movies[0].backdrop_path}`} 
+                title={Movies[0].original_title}
+                text={Movies[0].overview}/>
             
             }
            
             <div style={{width: '85%', margin:'1rem auto'}}>
-                <title level={2}>Movies by latest</title>
+                {/* replace it with Title tag after, and level={2} */}
+                <h1>Movies by latest</h1>
                 <hr/>
 
                 <Row gutter={[16,16]}>
-                    {Movies && Movies.map((movie, index) => {
+                    {Movies && Movies.map((movie, index) => (
                         <React.Fragment key={index}>
                             <GridCard 
-                            image={movie.poster_path && `${IMAGE_URL}w500${movie.poster_path}`}
+                            image={movie.poster_path && `${IMAGE_BASE_URL}w500${movie.poster_path}`}
                             MovieId={movie.id}
                             />
                         </React.Fragment>
-                    })}
+                    ))}
                 </Row>
 
                 <br/>
@@ -65,3 +66,5 @@ function LandingPage(props) {
         </div>
     )
 }
+
+export default LandingPage;
