@@ -10,6 +10,9 @@ import LandingPage from "./views/landing_page/landing_page"
 
 const App = () => (
     <div>
+        <header>
+            <NavBarContainer />
+        </header>
         <Switch>
             <Route path="/browse" component={LandingPage} />
             <Route path="/signup" component={SignupFormContainer} />
