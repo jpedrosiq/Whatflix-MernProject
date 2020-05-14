@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 require('./config/passport')(passport);
 
 
-app.get("/", (req, res) => res.send("Hello World"));
+// app.get("/", (req, res) => res.send("Hello World"));
 
 
 app.use("/api/users", users);

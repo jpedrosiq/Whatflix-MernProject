@@ -38,7 +38,6 @@ router.post('/register', (req, res) => {
       } else {
         // Otherwise create a new user
         const newUser = new User({
-          handle: req.body.handle,
           email: req.body.email,
           password: req.body.password
         })
@@ -52,7 +51,7 @@ router.post('/register', (req, res) => {
               .catch(err => console.log(err));
           })
         })
-        const payload = { id: newUser.id, name: newUser.name };
+        const payload = { id: newUser.id, email: newUser.email };
 
         jwt.sign(
           payload,
@@ -91,7 +90,7 @@ router.post('/login', (req, res) => {
       bcrypt.compare(password, user.password)
         .then(isMatch => {
           if (isMatch) {
-            const payload = { id: user.id, name: user.name };
+            const payload = { id: user.id, email: user.email };
 
             jwt.sign(
               payload,

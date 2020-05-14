@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import "./login_form.css";
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -59,25 +60,30 @@ class LoginForm extends React.Component {
 
     render() {
         return (
-            <div>
-                <form onSubmit={this.handleSubmit}>
-                    <div>
-                        <input type="text"
-                            value={this.state.email}
-                            onChange={this.update('email')}
-                            placeholder="Email"
-                        />
-                        <br />
-                        <input type="password"
-                            value={this.state.password}
-                            onChange={this.update('password')}
-                            placeholder="Password"
-                        />
-                        <br />
-                        <input type="submit" value="Submit" />
-                        {this.renderErrors()}
-                    </div>
-                </form>
+            <div className="dropdown-login">
+                <button className="dropdown-login-btn">LOGIN</button>
+                <div className="dropdown-login-content">
+                    <form onSubmit={this.handleSubmit} className="login-form-box">
+                        <div className="login-form">
+                            <input type="text"
+                                value={this.state.email}
+                                onChange={this.update('email')}
+                                placeholder="Email"
+                                className="login-input"
+                            />
+                            <br />
+                            <input type="password"
+                                value={this.state.password}
+                                onChange={this.update('password')}
+                                placeholder="Password"
+                                className="login-input"
+                            />
+                            <br />
+                            <input type="submit" value="Submit" className="btn-signup" />
+                            {this.renderErrors()}
+                        </div>
+                    </form>
+                </div>
             </div>
         );
     }

@@ -1,0 +1,87 @@
+
+.dropdown-login-btn {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    border: none;
+    margin: 10px 10px 0px; 
+    margin-right: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    background-color:#86b3d3;
+    color: black;
+    border-radius: 3px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-login {
+  position: relative;
+  display: inline-block;
+}
+
+.login-form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input {
+  border-radius: 3px;
+    border-style: none;
+    height: 30px;
+    width: 200px;
+    margin: 5px;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+.dropdown-login-content {
+  display: none;
+  position: absolute;
+  /* background-color: #68a7d3; */
+  background-image: linear-gradient(#68a7d3, #5db694);
+  right: 0;
+  margin-right: 25px;
+  min-width: 280px;
+  min-height: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.btn-signup {
+  width: 120px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    border: none;
+    margin: 10px 10px 0px; 
+    margin-right: 25px;
+    font-size: 16px;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    background-color:#86b3d3;
+    color: black;
+    border-radius: 3px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-login-content .login-form-box {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-login-content a:hover {background-color: #ddd;}
+
+.dropdown-login:hover .dropdown-login-content {display: block;}
+
+.dropdown-login:hover .dropdown-login-btn {background-color: #3e638e;}

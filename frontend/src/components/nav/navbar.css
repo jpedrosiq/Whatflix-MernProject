@@ -1,17 +1,51 @@
-.NavBar {
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 79px;
+    margin-top: 13px;
+    background-color: black;
 }
 
-.NavBar button {
-    height: 20px;
+.btn-nav-bar {
+    height: 30px;
+    display: flex;
+    margin-top: 5px;
+    justify-content: flex-end;
 }
 
-.Links1 {
+.logo {
+    margin: 10px;
+    margin-top: 13px
+}
+
+/* .btn-nav-login {
     width: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    height: 30px;
+    margin: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    padding: 5px;
+    background-color: black;
+    color: rgb(104, 161, 172);
+    border-radius: 3px;
+    align-items: center;
+} */
+
+.btn-nav-signup {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    background-color:#86b3d3;
+    color: black;
+    border-radius: 3px;
+    align-items: center;
 }
 
 .Links2 {
