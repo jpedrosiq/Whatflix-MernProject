@@ -44,5 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Render our root component and pass in the store as a prop
     const root = document.getElementById('root');
 
+    // IF I WANT TO LOGOUT THE USER FORCED - JUST FOR TESTING
+    window.logout = logout
+    window.dispatch = store.dispatch
+    // END TESTING
+    
     ReactDOM.render(<Root store={store} />, root);
 });
