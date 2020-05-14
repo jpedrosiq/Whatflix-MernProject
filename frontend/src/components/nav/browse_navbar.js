@@ -1,5 +1,4 @@
 import React from "react";
-import "./browse_navbar.css";
 import { Link } from 'react-router-dom';
 
 
