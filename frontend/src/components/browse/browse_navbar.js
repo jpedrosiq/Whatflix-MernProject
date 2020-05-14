@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 class BrowseNavBar extends React.Component {
     
     render() {
+        return (
         <div>
             <div>
                 {/* <Link to={'/browse'}>All Movies</Link>
@@ -17,6 +18,7 @@ class BrowseNavBar extends React.Component {
             </div>
 
         </div>
+        )
     }
 
 }
