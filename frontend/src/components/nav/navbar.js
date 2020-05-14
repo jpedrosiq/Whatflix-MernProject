@@ -31,7 +31,9 @@ class NavBar extends React.Component {
         return (
             <div className="nav-bar">
                 <Link to="/">
-                    <img className="logo" src="https://i.imgur.com/dujClej.png?1" alt="logo" height="50px" width="307px"/>
+                    {/* <img className="logo" src="https://i.imgur.com/dujClej.png?1" alt="logo" height="50px" width="307px"/> */}
+                    <img className="logo" src="https://i.imgur.com/2wAAQ5P.png?1" alt="logo" height="50px" width="348px"/>
+                    {/* <img className="logo" src="https://i.imgur.com/huLl3wv.png?1" alt="logo" height="60px" width="200px"/> */}
                 </Link>
                 {this.getLinks()}
             </div>
