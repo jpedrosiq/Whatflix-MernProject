@@ -1,17 +1,32 @@
-import React from 'react';
-import {Col} from 'antd';
+import React from 'react'
+import { Card, Avatar, Col, Typography, Row } from 'antd';
+import { IMAGE_BASE_URL } from '../../../Config';
 
-function GridCard(props) {
-    return(
-        <Col lg={6} md={8} xs={24}>
-            <div style={{position: 'relative'}}>
-            <a href={`/#/movie/${props.movieId}`}>
-                <img style={{width:'30%', height: '30%'}} alt='img' src={props.image} />
-            </a>
-            </div>
+function GridCards(props) {
 
-        </Col>
-    )
-};
+    let { actor, key, image, movieId, movieName, characterName } = props
+    const POSTER_SIZE = "w154";
 
-export default GridCard;
+    if (actor) {
+        return (
+            <Col key={key} lg={6} md={8} xs={24}>
+                <div style={{ position: 'relative' }}>
+                    <img style={{ width: '20%', height: '20%' }} alt={characterName} src={`${IMAGE_BASE_URL}${POSTER_SIZE}${image}`} />
+                </div>
+            </Col>
+        )
+    } else {
+        return (
+            <Col key={key} lg={6} md={8} xs={24}>
+                <div style={{ position: 'relative' }}>
+                    <a href={`/#/movie/${movieId}`} >
+                        <img style={{ width: '30%', height: '30%' }} alt={movieName} src={image} />
+                    </a>
+                </div>
+            </Col>
+        )
+    }
+
+}
+
+export default GridCards
