@@ -9,7 +9,7 @@ const Auth = ({ component: Component, path, loggedIn, exact }) => (
             <Component {...props} />
         ) : (
                 // Redirect to the browse page if the user is authenticated
-                <Redirect to="/browse" />
+                <Redirect to="/login" />
             )
     )} />
 );
