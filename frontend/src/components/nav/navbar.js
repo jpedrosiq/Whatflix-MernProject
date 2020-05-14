@@ -18,12 +18,21 @@ class NavBar extends React.Component {
     }
 
     getLinks() {
+        if (this.props.loggedIn) {
+            return (
+                <div className="logged-in-navbar">
+                    <Link className="nav-bar-favorites" to={'/favorites'}>Favorites</Link>
+                    <button className="btn-nav-signup" onClick={this.logoutUser}>Logout</button>
+                </div>
+            );
+        } else {
             return (
                 <div className="btn-nav-bar">
-                    <Link className="btn-nav-signup" to={'/signup'} style={{ textDecoration:"none" }}>SIGN UP</Link>
+                    <Link className="btn-nav-signup" to={'/signup'} style={{ textDecoration: "none" }}>SIGN UP</Link>
                     <LoginFormContainer />
                 </div>
             );
+        }
         
     }
 
@@ -31,9 +40,7 @@ class NavBar extends React.Component {
         return (
             <div className="nav-bar">
                 <Link to="/">
-                    {/* <img className="logo" src="https://i.imgur.com/dujClej.png?1" alt="logo" height="50px" width="307px"/> */}
                     <img className="logo" src="https://i.imgur.com/2wAAQ5P.png?1" alt="logo" height="50px" width="348px"/>
-                    {/* <img className="logo" src="https://i.imgur.com/huLl3wv.png?1" alt="logo" height="60px" width="200px"/> */}
                 </Link>
                 {this.getLinks()}
             </div>
