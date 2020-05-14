@@ -3,7 +3,8 @@ import {Typhography, Row, Button, Divider} from 'antd';
 import {API_URL, API_KEY, IMAGE_BASE_URL } from '../../Config';
 import MainImage from './sections/main_image';
 import GridCard from './sections/gridCard';
-import BrowseNavBar from "../../browse/browse_navbar"
+import BrowseNavBar from "../../nav/browse_navbar";
+import NavBarContainer from "../../nav/navbar_container";
 
 // const { Title } = Typhography;
 
@@ -32,7 +33,8 @@ function LandingPage(props) {
 
     return (
         <div>
-            <BrowseNavBar />
+            {/* <BrowseNavBar /> */}
+            <NavBarContainer />
             <div style={{ width:'100%', margin: 0 }}>
 
                 {Movies[0] &&
