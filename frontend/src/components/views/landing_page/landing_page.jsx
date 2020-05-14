@@ -3,7 +3,7 @@ import {Typhography, Row, Button, Divider} from 'antd';
 import { API_URL, API_KEY, IMAGE_BASE_URL, IMAGE_SIZE, POSTER_SIZE } from '../../Config';
 import MainImage from './sections/main_image';
 import GridCard from './sections/gridCard';
-import BrowseNavBar from "../../browse/browse_navbar"
+import BrowseNavBar from "../../nav/browse_navbar"
 
 // const { Title } = Typhography;
 
