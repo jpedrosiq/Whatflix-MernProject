@@ -1,0 +1,23 @@
+.description-content {
+    color: #86b3d3;
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    margin: 7px;
+    margin-left: 40px;
+}
+
+.description-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-title {
+    color:#648195;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.description-item-title {
+    font-weight: bold;
+}

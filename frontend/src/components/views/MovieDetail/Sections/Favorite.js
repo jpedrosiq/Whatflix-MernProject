@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Button } from 'antd';
 import { useSelector } from 'react-redux';
+import "../moviedetail.css";
 
 function Favorite(props) {
     const user = useSelector(state => state.user)
@@ -78,7 +79,7 @@ function Favorite(props) {
 
     return (
         <>
-            <Button onClick={onClickFavorite} > {!Favorited ? "Add to Favorite" : "Not Favorite"} {FavoriteNumber}</Button>
+            <Button className="btn-favorite" onClick={onClickFavorite} > {!Favorited ? "Add to Favorite" : "Not Favorite"} </Button>
         </>
     )
 }

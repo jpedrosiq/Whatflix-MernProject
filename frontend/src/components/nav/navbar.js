@@ -22,7 +22,7 @@ class NavBar extends React.Component {
             return (
                 <div className="logged-in-navbar">
                     <Link className="nav-bar-favorites" to={'/favorites'}>Favorites</Link>
-                    <button className="btn-nav-signup" onClick={this.logoutUser}>Logout</button>
+                    <button className="btn-nav-signup" onClick={this.logoutUser} >Logout</button>
                 </div>
             );
         } else {
