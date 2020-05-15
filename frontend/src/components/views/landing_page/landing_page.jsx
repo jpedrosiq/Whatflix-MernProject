@@ -17,9 +17,9 @@ function LandingPage(props) {
         fetchMovies(endpoint);
     }, []);
 
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-    }, [])
+    // useEffect(() => {
+    //     window.addEventListener("scroll", handleScroll);
+    // }, [])
 
     const fetchMovies = (path) => {
         fetch(path)

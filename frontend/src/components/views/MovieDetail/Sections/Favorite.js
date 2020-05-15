@@ -4,7 +4,7 @@ import { Button } from 'antd';
 import { useSelector } from 'react-redux';
 
 function Favorite(props) {
-    const user = useSelector(state => state.user)
+    const user = useSelector(state => state.session)
     const movieId = props.movieId
     const userFrom = props.userFrom
     const movieTitle = props.movieInfo.title
@@ -22,7 +22,7 @@ function Favorite(props) {
 
     const onClickFavorite = () => {
 
-        if (user.userData && !user.userData.isAuth) {
+        if (!user.isAuthenticated) {
             return alert('Please Log in first');
         }
 

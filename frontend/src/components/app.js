@@ -6,6 +6,7 @@ import MainPage from './main/main_page';
 import SignupFormContainer from './session/signup_form_container';
 import MovieDetailPage from './views/MovieDetail/MovieDetail';
 import LandingPage from "./views/landing_page/landing_page"
+import FavoritePage from "./views/FavoritePage/FavoritePage"
 
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
             <Route path="/signup" component={SignupFormContainer} />
             <Route path="/movie/:movieId" component={MovieDetailPage}/>
             <Route exact path="/" component={MainPage} />
+            <Route exact path="/favorites" component={FavoritePage} />
         </Switch>
     </div>
 );
