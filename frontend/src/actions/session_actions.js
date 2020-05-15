@@ -65,5 +65,6 @@ export const login = user => dispatch => (
 export const logout = () => dispatch => {
     localStorage.removeItem('jwtToken')
     APIUtil.setAuthToken(false)
+    window.location.href = "/#/browse";
     dispatch(logoutUser())
 };
