@@ -42,9 +42,10 @@ class SignupForm extends React.Component {
 
     renderErrors() {
         return (
+
             <ul>
                 {Object.keys(this.state.errors).map((error, i) => (
-                    <li key={`error-${i}`}>
+                    <li key={`error-${i}`} style={{ color:"red", listStyle:"none" }}>
                         {this.state.errors[error]}
                     </li>
                 ))}
@@ -54,13 +55,18 @@ class SignupForm extends React.Component {
 
     render() {
         return (
-            <div>
-                <div className="nav-bar">
-                    <Link to="/">
-                        <img src="https://i.imgur.com/HLCwM97.png" alt="logo"/>
-                    </Link>
+            <div className="showcase-box-signup">
+                <div className="poster-img">
+                    <img src="https://i.imgur.com/u1c7OSV.jpg" height="537px" width="400px" alt="pulp-fiction"/>
                 </div>
                 <div className="signup-form-container" >
+                    <div className="signup-topics">
+                        <ul className="list-topics">
+                            <li>Find the newest films to watch</li>
+                            <li>Keep track of all your favorite movies</li>
+                            <li>And search for new ones</li>
+                        </ul>
+                    </div>
                     <form onSubmit={this.handleSubmit} className="signup-form-box">
                         <div className="signup-form">
                             <br />
@@ -78,7 +84,7 @@ class SignupForm extends React.Component {
                                 className="signup-input"
                             />
                             <br />
-                            <input type="submit" value="Submit" className="btn-nav-submit"/>
+                            <input type="submit" value="SIGN UP!" className="btn-nav-submit"/>
                             {this.renderErrors()}
                         </div>
                     </form>

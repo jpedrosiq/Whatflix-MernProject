@@ -48,7 +48,7 @@ class LoginForm extends React.Component {
         return (
             <ul>
                 {Object.keys(this.state.errors).map((error, i) => (
-                    <li key={`error-${i}`}>
+                    <li key={`error-${i}`} style={{ color: "red", listStyle: "none" }}>
                         {this.state.errors[error]}
                     </li>
                 ))}
@@ -77,7 +77,7 @@ class LoginForm extends React.Component {
                                 className="login-input"
                             />
                             <br />
-                            <input type="submit" value="Submit" className="btn-signup" />
+                            <input type="submit" value="LOGIN" className="btn-signup" />
                             {this.renderErrors()}
                         </div>
                     </form>
