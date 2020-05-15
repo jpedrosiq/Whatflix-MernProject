@@ -8,6 +8,7 @@ import GridCards from "../landing_page/sections/gridCard"
 import MainImage from '../landing_page/sections/main_image';
 import MovieInfo from './Sections/MovieInfo';
 import Favorite from './Sections/Favorite.js';
+import "./moviedetail.css"
 
 function MovieDetailPage(props) {
     const movieId = props.match.params.movieId
@@ -66,7 +67,7 @@ function MovieDetailPage(props) {
     }
 
     return (
-        <div>
+        <div className="movie-detail-page">
             {/* Header */}
             {!LoadingForMovie ?
                 <MainImage
@@ -98,7 +99,7 @@ function MovieDetailPage(props) {
                 {/* Actors Grid*/}
 
                 <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem' }}>
-                    <Button onClick={toggleActorView}>Toggle Actor View </Button>
+                    <Button className="btn-actors" onClick={toggleActorView}>Toggle Actor View </Button>
                 </div>
 
                 {ActorToggle &&

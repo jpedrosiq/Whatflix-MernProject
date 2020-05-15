@@ -1,0 +1,35 @@
+.btn-actors {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    background-color:#86b3d3;
+    color: black;
+    border-radius: 3px;
+    border: none;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-favorite {
+    width: 150px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    height: 40px;
+    margin: 5px;
+    margin-top: 15px;
+    padding: 5px;
+    background-color:#86b3d3;
+    color: black;
+    border-radius: 3px;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
