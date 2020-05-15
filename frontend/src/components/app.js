@@ -7,7 +7,7 @@ import SignupFormContainer from './session/signup_form_container';
 import MovieDetailPage from './views/MovieDetail/MovieDetail';
 import LandingPage from "./views/landing_page/landing_page"
 import FavoritePage from "./views/FavoritePage/FavoritePage"
-
+import '../components/views/landing_page/antd.css';
 
 const App = () => (
     <div>

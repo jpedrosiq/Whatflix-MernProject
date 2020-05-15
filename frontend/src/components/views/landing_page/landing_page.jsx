@@ -1,8 +1,8 @@
 import React, {useEffect, useState, useRef} from 'react';
-import {Typhography, Row, Button, Divider} from 'antd';
+import {Typhography, Row } from 'antd';
 import { API_URL, API_KEY, IMAGE_BASE_URL, IMAGE_SIZE, POSTER_SIZE } from '../../Config';
 import MainImage from './sections/main_image';
-import GridCard from './sections/gridCard';
+import GridCards from './sections/gridCard';
 
 // const { Title } = Typhography;
 
@@ -17,9 +17,9 @@ function LandingPage(props) {
         fetchMovies(endpoint);
     }, []);
 
-    // useEffect(() => {
-    //     window.addEventListener("scroll", handleScroll);
-    // }, [])
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    }, [])
 
     const fetchMovies = (path) => {
         fetch(path)
@@ -51,7 +51,7 @@ function LandingPage(props) {
         const html = document.documentElement;
         const docHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
         const windowBottom = windowHeight + window.pageYOffset;
-        if (windowBottom >= docHeight - 1) {
+        if (windowBottom >= docHeight - 1 && (window.location.href === 'http://localhost:3000/#/browse' || window.location.href === 'https://whatflix-app.herokuapp.com/#/browse')) {
             // loadMoreItems()
             console.log('clicked')
             buttonRef.current.click();
@@ -72,12 +72,12 @@ function LandingPage(props) {
 
             <div style={{ width: '85%', margin: '1rem auto' }}>
 
-                <h1 level={2} > Movies by latest </h1>
+                <h1 level={2} style={{ color:"#86b3d3" }}> MOVIE CATALOG </h1>
                 <hr />
                 <Row gutter={[16, 16]}>
                     {Movies && Movies.map((movie, index) => (
                         <React.Fragment key={index}>
-                            <GridCard
+                            <GridCards
                                 image={movie.poster_path ?
                                     `${IMAGE_BASE_URL}${POSTER_SIZE}${movie.poster_path}`
                                     : null}
