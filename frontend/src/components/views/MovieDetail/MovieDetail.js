@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { List, Avatar, Row, Col, Button } from 'antd';
+import { List, Avatar, Row, Col } from 'antd';
 import axios from 'axios';
 // import Comments from './Sections/Comments'
 // import LikeDislikes from './Sections/LikeDislikes';
@@ -26,16 +26,6 @@ function MovieDetailPage(props) {
         let endpointForMovieInfo = `${API_URL}movie/${movieId}?api_key=${API_KEY}&language=en-US`;
         fetchDetailInfo(endpointForMovieInfo)
 
-        // axios.post('/api/comment/getComments', movieVariable)
-        //     .then(response => {
-        //         console.log(response)
-        //         if (response.data.success) {
-        //             console.log('response.data.comments', response.data.comments)
-        //             setCommentLists(response.data.comments)
-        //         } else {
-        //             alert('Failed to get comments Info')
-        //         }
-        //     })
 
     }, [])
 
@@ -99,7 +89,7 @@ function MovieDetailPage(props) {
                 {/* Actors Grid*/}
 
                 <div style={{ display: 'flex', justifyContent: 'center', margin: '2rem' }}>
-                    <Button className="btn-actors" onClick={toggleActorView}>Toggle Actor View </Button>
+                    <button className="btn-actors" onClick={toggleActorView}>Toggle Actor View </button>
                 </div>
 
                 {ActorToggle &&

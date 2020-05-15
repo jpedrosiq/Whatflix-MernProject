@@ -10,7 +10,7 @@
      flex-direction: column;
      align-content: center;
      text-align: center;
-     margin-top: 15.1rem;
+     margin-top: 14.1rem;
      justify-content: center;
      margin-left: 70px;
 
@@ -28,7 +28,7 @@
     border-radius: 3px;
     border-style: none;
     height: 50px;
-    width: 310px;
+    width: 370px;
     margin: 5px;
     padding-left: 20px;
     font-size: 16px;
@@ -56,7 +56,7 @@
 }
 
 .btn-nav-submit {
-    width: 332px;
+    width: 370px;
     display: flex;
     justify-content: center;
     height: 50px;
