@@ -18,9 +18,6 @@ class LoginForm extends React.Component {
 
     // Once the user has been authenticated, redirect to the Browse page
     componentWillReceiveProps(nextProps) {
-        if (nextProps.currentUser === true) {
-            this.props.history.push('/browse');
-        }
 
         // Set or clear errors
         this.setState({ errors: nextProps.errors })
@@ -43,6 +40,7 @@ class LoginForm extends React.Component {
         };
 
         this.props.login(user);
+
     }
 
     // Render the session errors if there are any
