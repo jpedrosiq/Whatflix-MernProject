@@ -4,7 +4,7 @@
 Whatflix is a webapp that helps the user find the right movie to watch based on their selected criteria. The user can browse through a catalog of movies, see the movie information, such as the year, revenue, and cast. Also, the user can save favorite movies to their own "to watch list".
 
 # Link to live site
-https://whatflix-app.herokuapp.com/
+Demo: [Link](https://whatflix-app.herokuapp.com/)
 
 # Technologies used
     
