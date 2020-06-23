@@ -8,7 +8,7 @@ Demo: [Link](https://whatflix-app.herokuapp.com/)
 
 # Technologies used 
     
-## Backend: Node, MongoDB, TMDB API, Express 
+## Backend: Node, MongoDB, TMDB API, Express  
 
 Node.js makes it easy to allow multiple events to occur concurrently by utilizing Javascript's asynchronicity. So using node will be essential for being able to filter movies by each option the user selects. Node will be used to configure the app's server.
 
