@@ -27,7 +27,7 @@ React and Redux will be used to render each component of the website, at every r
 # Some features and challenges faced
 
 ## Implementing the API:
-
+ 
 One of our main features is the ability to browse a catalogue of new and old movies. We considered populating our database with our own seeds but it would be very limiting and time consuming. We then decided to use an API named “The Movie Data Base” (https://www.themoviedb.org/). This allowed us access to an ever expanding database of movies that we could use to populate our site. It’s implemented throughout or site including our endless browse page and displaying the cast of every movie.
 The code snippet below shows the way we were able to fetch a movie from TMDB API.
  
