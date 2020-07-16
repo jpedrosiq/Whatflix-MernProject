@@ -46,7 +46,7 @@ The code snippet below shows the way we were able to fetch a movie from TMDB API
     ))}
 </Row>
 ```
- 
+  
 ## Using React Hooks:
 
 The Effect Hook, useEffect, adds the ability to perform side effects from a function component. It serves the same purpose as componentDidMount, componentDidUpdate, and componentWillUnmount in React classes, but unified into a single API. This hook was used to implement the autoscroll, so that way the user can scroll down to the bottom of the movie catalog page and it will render more movie posters automatically. The action of rendering more movies was also due to useEffect, by fetching the movie through the right url.
