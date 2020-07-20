@@ -6,7 +6,7 @@ Whatflix is a webapp that helps the user find the right movie to watch based on 
 # Link to live site
 Demo: [Link](https://whatflix-app.herokuapp.com/)
 
-# Technologies used  
+# Technologies used   
       
 ## Backend: Node, MongoDB, TMDB API, Express   
  
