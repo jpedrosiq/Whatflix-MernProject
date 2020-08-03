@@ -14,7 +14,7 @@ Node.js makes it easy to allow multiple events to occur concurrently by utilizin
 
 MongoDB is a document-based NoSQL database that is scalable and flexible. That being said, it would be the best and most practical option when it comes to seeding our database. Since NoSQL databases are distributed, which means they are collections of multiple, logically interrelated databases, it will be helpful in terms of associations. 
  
-TMDB API is a RESTful web service to obtain movie information, which will be a great help when it comes to seeding our database. 
+TMDB API is a RESTful web service to obtain movie information, which will be a great help when it comes to seeding our database.  
  
 Express is a web application framework for Node that will be used in this project to write handlers to respond to different HTTP verb requests at different URL paths.   
 
