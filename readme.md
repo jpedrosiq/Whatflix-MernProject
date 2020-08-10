@@ -16,7 +16,7 @@ MongoDB is a document-based NoSQL database that is scalable and flexible. That b
    
 TMDB API is a RESTful web service to obtain movie information, which will be a great help when it comes to seeding our database.    
  
-Express is a web application framework for Node that will be used in this project to write handlers to respond to different HTTP verb requests at different URL paths.   
+Express is a web application framework for Node that will be used in this project to write handlers to respond to different HTTP verb requests at different URL paths.    
 
 ## Frontend: Axios, React and Redux
 
