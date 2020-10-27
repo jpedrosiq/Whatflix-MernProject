@@ -12,7 +12,7 @@ Demo: [Link](https://whatflix-app.herokuapp.com/)
  
 Node.js makes it easy to allow multiple events to occur concurrently by utilizing Javascript's asynchronicity. So using node will be essential for being able to filter movies by each option the user selects. Node will be used to configure the app's server.               
 
-MongoDB is a document-based NoSQL database that is scalable and flexible. That being said, it would be the best and most practical option when it comes to seeding our database. Since NoSQL databases are distributed, which means they are collections of multiple, logically interrelated databases, it will be helpful in terms of associations.                     
+MongoDB is a document-based NoSQL database that is scalable and flexible. That being said, it would be the best and most practical option when it comes to seeding our database. Since NoSQL databases are distributed, which means they are collections of multiple, logically interrelated databases, it will be helpful in terms of associations.                      
     
 TMDB API is a RESTful web service to obtain movie information, which will be a great help when it comes to seeding our database.    
  
